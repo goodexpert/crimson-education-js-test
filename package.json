@@ -1,0 +1,29 @@
+{
+  "name": "coding-test-starter",
+  "version": "1.0.0",
+  "description": "Coding Test Starter file",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crimson-education/coding-test-starter.git"
+  },
+  "author": "Crimson Education",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crimson-education/coding-test-starter/issues"
+  },
+  "homepage": "https://github.com/crimson-education/coding-test-starter#readme",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^26.6.3",
+    "prettier": "2.3.0"
+  }
+}
