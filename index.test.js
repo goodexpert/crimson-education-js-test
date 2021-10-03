@@ -1,7 +1,19 @@
 const { getNotes } = require("./index");
 
-describe("testing getNotes", () => {
-  it("should do something useful", () => {
-    expect(getNotes()).toEqual("implement me");
+describe("testing getNotes[Notes = 5, 10, 20, 50, 10]", () => {
+  it("10 = { 5: 2, 10: 0, 20: 0, 50: 0, 100: 0 }", () => {
+    expect(getNotes(10)).toEqual({ 5: 2, 10: 0, 20: 0, 50: 0, 100: 0 });
+  });
+
+  it("15 = { 5: 1, 10: 1, 20: 0, 50: 0, 100: 0 }", () => {
+    expect(getNotes(15)).toEqual({ 5: 1, 10: 1, 20: 0, 50: 0, 100: 0 });
+  });
+
+  it("35 = { 5: 1, 10: 1, 20: 1, 50: 0, 100: 0 }", () => {
+    expect(getNotes(35)).toEqual({ 5: 1, 10: 1, 20: 1, 50: 0, 100: 0 });
+  });
+
+  it("85 = { 5: 1, 10: 1, 20: 1, 50: 1, 100: 0 }", () => {
+    expect(getNotes(85)).toEqual({ 5: 1, 10: 1, 20: 1, 50: 1, 100: 0 });
   });
 });
